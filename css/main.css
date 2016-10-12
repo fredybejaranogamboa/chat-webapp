@@ -1,0 +1,90 @@
+/* 
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.dropdown {
+    cursor:pointer;
+}
+
+
+.img-home {
+    margin: 15px auto 10px;
+    max-width: 300px
+}
+.img-home-logo {
+    margin: 15px auto 10px;
+    max-width: 300px
+}
+
+.tab-pane {
+    margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+    padding: 50px 0;
+}
+
+.section-colored {
+    background-color: #e1e1e1;
+    /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+    margin-top: 40px;
+}
+
+.sidebar ul {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+/* 404 Page Styles */
+.error-404 {
+    font-size: 8em;
+}
+
+/* Footer Styles */
+footer {
+    margin: 50px 0;
+}
+
+.btn-connect-fb {
+	display: table;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.6;
+	border-radius: 10px;
+	width: 100%;
+	text-align: left;
+	background-color: #3a5795;
+	color: #fff;
+	background-image: -webkit-linear-gradient(#0863a1, #0a5d95 50%, #0c5381);
+	background-image: linear-gradient(#0863a1, #0a5d95 50%, #0c5381);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0863a1',
+		endColorstr='#ff0c5381', GradientType=0);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+    
+}
