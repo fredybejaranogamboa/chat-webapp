@@ -1,0 +1,118 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 40px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    background-color: #f5f5f5;
+}
+.img-footer {
+    margin: 0 auto;
+    max-width: 300px;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+body  {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #ffad1d !important;
+    padding-top: 50px;
+}
+
+body > .container {
+    padding: 60px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.white-background{
+    background-color: whitesmoke;
+}
+
+.btn-facebook{
+    text-align: center !important;
+}
+
+.dropdown {
+    cursor:pointer;
+}
+
+.img-home-logo {
+    margin: 5% auto 5%;
+    max-width: 300px
+}
+
+.tab-pane {
+    margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+    padding: 50px 0;
+}
+
+.section-colored {
+    background-color: #e1e1e1;
+    /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+    margin-top: 40px;
+}
+
+.sidebar ul {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+/* 404 Page Styles */
+.error-404 {
+    font-size: 8em;
+}
+
+.btn-connect-fb {
+    display: table;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #3a5795;
+    color: #fff;
+    background-image: -webkit-linear-gradient(#0863a1, #0a5d95 50%, #0c5381);
+    background-image: linear-gradient(#0863a1, #0a5d95 50%, #0c5381);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0863a1',
+        endColorstr='#ff0c5381', GradientType=0);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+
+}

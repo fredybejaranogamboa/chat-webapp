@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -8,7 +9,12 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
     <head>
-
+        <!--PRETTY URLs-->
+        <?php
+            $path = dirname($_SERVER['SCRIPT_NAME']);
+            $uri = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$path.'/';
+            echo '<base href="' . $uri . '" />';
+        ?>
         <!-- Meta-Information -->
         <title>MiChat</title>
         <meta charset="utf-8">
@@ -17,14 +23,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="app/resources/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="app/resources/css/bootstrap-theme.min.css">-->
+        <link href="app/resources/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Our Website CSS Styles -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap-social.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="app/resources/css/bootstrap-social.css">
+        <link rel="stylesheet" href="app/resources/css/style.css">
 
     </head>
     <body ng-app="chatWebApp">
@@ -34,9 +39,9 @@
         <![endif]-->
 
         <!-- Our Website Content Goes Here -->
-        <!--<div ng-include='"templates/header.html"'></div>-->
+        <div ng-include='"app/templates/header.html"'></div>
         <div ng-view></div>
-        <div ng-include='"templates/footer.html"'></div>
+        <div ng-include='"app/templates/footer.html"'></div>
 
         <!-- Vendor: Javascripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -47,17 +52,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
 
         <!-- Our Website Javascripts -->
-        <script src="js/main.js"></script>
-        <script src="js/login.js"></script>
-        <script>
-            // Load the SDK asynchronously
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/es_LA/sdk.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
+        <script src="app/modules/main.js"></script>
+        <script src="app/resources/lib/angular-facebook.js"></script>
+        <script src="app/modules/chatService.js"></script>
     </body>
 </html>
+

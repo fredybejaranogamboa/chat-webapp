@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <img class="img-responsive img-home-logo" src="app/resources/img/logo_michat.png" alt="">
+        </div>
+        <div class="col-lg-12">
+            <button type="button" class="btn btn-block btn-social btn-facebook" data-ng-disabled="!facebookReady" data-ng-click="intentLogin()">Iniciar sesión con Facebook</button>
+            <div style="margin-top: 1%; text-align: right; padding: 3px;" class="alert alert-info" data-ng-show="facebookReady && salutation">
+                <p>No eres <img src="https://graph.facebook.com/{{facebookId}}/picture?width=25&height=25" alt="" /> ????
+                    <button class="btn-link" data-ng-click="logout()">Cerrar sesion</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
