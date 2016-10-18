@@ -62,6 +62,7 @@ app.controller('LoginCtrl', function ($scope, Facebook, $location, $http) {
     var userIsConnected = false;
 
     Facebook.getLoginStatus(function (response) {
+        console.log('getLoginStatus', response);
         if (response.status == 'connected') {
             userIsConnected = true;
             $scope.logged = true;
