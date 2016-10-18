@@ -7,19 +7,19 @@ var app = angular.module('chatWebApp', ['ngRoute', 'facebook', 'ChatService']);
  * Configure the Routes
  */
 app.config(['$routeProvider', function ($routeProvider, $locationProvider) {
-    $routeProvider
-        // Home
-        .when("/", {templateUrl: "app/partials/home.html", controller: "LoginCtrl"})
-        // Pages
-        .when("/chat", {templateUrl: "app/partials/chat.html", controller: "ChatCtrl"})
-        // else 404 or Home Page
-        .otherwise("/", {templateUrl: "app/partials/home.html", controller: "LoginCtrl"});    
-}]);
+        $routeProvider
+                // Home
+                .when("/", {templateUrl: "app/partials/home.html", controller: "LoginCtrl"})
+                // Pages
+                .when("/chat", {templateUrl: "app/partials/chat.html", controller: "ChatCtrl"})
+                // else 404 or Home Page
+                .otherwise("/", {templateUrl: "app/partials/home.html", controller: "LoginCtrl"});
+    }]);
 
-app.config(function($locationProvider) {
+app.config(function ($locationProvider) {
     $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
+        enabled: true,
+        requireBase: false
     });
 });
 
@@ -140,7 +140,7 @@ app.controller('LoginCtrl', function ($scope, Facebook, $location, $http) {
             });
         }
     });
-    
+
     function checkSubscription(token) {
         console.log('getUserInfo');
         console.log($location.search());
@@ -153,18 +153,37 @@ app.controller('LoginCtrl', function ($scope, Facebook, $location, $http) {
                 token: $location.search().t
             }
         }).then(function mySucces(response) {
-            console.log(response);
-            //$location.path('/chat');
+            console.log('mySucces', response);
+            $location.path('/chat');
         }, function myError(response) {
-            console.log(response);
+            console.log('myError', response);
         });
     }
-    
+
 });
 
 /**
  * Control Chat Page
  */
-app.controller('ChatCtrl', function ($scope) {
+app.controller('ChatCtrl', function ($scope, $location, $http) {
     console.log("Chat Controller reporting for duty.");
+    
+    $scope.users = {};
+    
+    $scope.startChat = function (userId) {
+        console.log('startChat');
+        $http({
+            method: "get",
+            url: "server/ServiceController.php",
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            params: {
+                action: "startChat",
+                userId: userId
+            }
+        }).then(function mySucces(response) {
+            console.log('mySucces', response);
+        }, function myError(response) {
+            console.log('myError', response);
+        });
+    };
 });

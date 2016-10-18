@@ -111,6 +111,11 @@ code {
         endColorstr='#ff0c5381', GradientType=0);
 }
 
+.people {
+    text-align: center;
+    margin: 1% auto 5%;
+}
+
 /* Responsive Styles */
 @media (max-width: 767px) {
 
