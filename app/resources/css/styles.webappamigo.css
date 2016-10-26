@@ -1,0 +1,361 @@
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+/* landscape */
+@media all and (orientation:landscape) {
+    .people-img {
+        width: 20px;
+    }
+    .profile-img {
+        width: 20px;
+    }
+}
+
+.body_for_footer {
+    padding-bottom: 40px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-top: solid #CCC 1px;
+}
+
+body>.container {
+    padding: 51px 15px 0;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+/* Begin Index CSS */
+.icon-connect-fb {
+    background-image: url(../images/logos/logo_face.png);
+    display: inline-block;
+    width: 13px;
+    height: 23px;
+}
+
+.btn-connect-fb {
+    display: table;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #3a5795;
+    color: #fff;
+    background-image: -webkit-linear-gradient(#0863a1, #0a5d95 50%, #0c5381);
+    background-image: linear-gradient(#0863a1, #0a5d95 50%, #0c5381);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0863a1',
+        endColorstr='#ff0c5381', GradientType=0);
+}
+
+.btn-connect-fb:active,.btn-connect-fb:focus,.btn-connect-fb:hover {
+    background-color: #133783;
+    color: #fff;
+    background-image: -webkit-linear-gradient(#005289, #004a7c 50%, #00406c);
+    background-image: linear-gradient(#005289, #004a7c 50%, #00406c);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff005289',
+        endColorstr='#ff00406c', GradientType=0);
+}
+
+.btn-connect-fb:active>span:first-child,.btn-connect-fb:focus>span:first-child,.btn-connect-fb:hover>span:first-child
+{
+    border-color: #00325f;
+}
+
+.btn-connect-fb:active>span:last-child,.btn-connect-fb:focus>span:last-child,.btn-connect-fb:hover>span:last-child
+{
+    border-color: #22638e;
+}
+
+.btn-connect-fb>span {
+    display: table-cell;
+    padding: 9px 16px;
+}
+
+.btn-connect-fb>span:first-child {
+    width: 23px;
+    border-right: 1px solid #0c4277;
+}
+
+.btn-connect-fb>span:last-child {
+    border-left: 1px solid #2a71a2;
+    text-align: center;
+}
+
+.btn-connect-fb>span [class^=icon-] {
+    vertical-align: middle;
+}
+
+.btn-connect-fb {
+    border-width: 0;
+    text-shadow: -1px 2px 1px rgba(0, 0, 0, .125);
+}
+/* End Index CSS */
+.body_pin {
+    background-color: #20608C;
+}
+
+.message_pin {
+    color: #FFF;
+}
+
+.row_pin {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.input_pin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo_amigo {
+    text-align: center;
+}
+
+.form-pin {
+    max-width: 330px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.people {
+    text-align: center;
+    padding: 2% 20% 0;
+}
+
+.people-img {
+    display: inline;
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid #848585;
+}
+
+.profile-img {
+    display: inline;
+    width: 100%;
+    max-width: 300px;
+}
+
+.person-name {
+    font-size: 32px;
+}
+
+.people-info {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic,
+        sans-serif;
+    width: 100%;
+    color: #6E6E6E;
+    line-height: 1.5;
+    font-size: 20px;
+    letter-spacing: 0.2pt;
+    word-spacing: 0.8pt;
+}
+
+@media all and (max-width:568px) {
+    .person-name {
+        font-size: 24px;
+    }
+    .people-info {
+        font-size: 16px;
+    }
+}
+
+.match-buttons {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 0 0 4%;
+}
+
+.match-icons {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    display: inline;
+}
+
+.ui-icon-dislike {
+    background-image: url("../images/icons/no.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+/* Begin Terms CSS */
+.form-large {
+    max-width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+}
+/* End Terms CSS */
+.like,.dislike {
+    opacity: 0;
+    position: absolute;
+    max-width: 240px;
+    left: 45px;
+    top: 40px;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
+    -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
+    -o-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.like {
+    right: 45px;
+    left: auto;
+}
+
+.like {
+    -o-transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    color: green;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 15px;
+    padding: 15% 15% 0% 0%;
+}
+
+.dislike {
+    -o-transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    color: red;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 15px;
+    padding: 15% 0% 0% 15%;
+}
+
+.customDialog {
+    background: white;
+    max-width: 300px;
+}
+
+.button-dialog {
+    -moz-box-shadow: 0px 10px 14px -7px #1E5478;
+    -webkit-box-shadow: 0px 10px 14px -7px #1E5478;
+    box-shadow: 0px 10px 14px -7px #1E5478;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3
+        ), color-stop(1, #408c99));
+    background: -moz-linear-gradient(top, #2A80B9 5%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #2A80B9 5%, #ffffff 100%);
+    background: -o-linear-gradient(top, #2A80B9 5%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #2A80B9 5%, #ffffff 100%);
+    background: linear-gradient(to bottom, #2A80B9 5%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2A80B9',
+        endColorstr='#ffffff', GradientType=0);
+    background-color: #2A80B9 !important;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic,
+        sans-serif;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+#navbar {
+    background: #2980B9;
+    position: absolute;
+    right: 10px;
+    width: 50%;
+}
+
+#shadow {
+    box-shadow: 0px 5px 10px #aaa;
+}
+
+.profile_buttonAccept {
+    width: 188px;
+    height: 38px;
+    padding: 0;
+    font-size: 20px;
+    border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    box-shadow: inset 0px 0px 0px !important;
+}
+
+.selectDefault {
+    padding-left: 8px;
+}
+
+.selectDiv select {
+    background: url('../images/buttons/selectButton.png') no-repeat right;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 27px;
+    padding: 3px 12px !important;
+}
+
+.selectDiv select:focus {
+    outline: none;
+}
+
+input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #EA2D49;
+}
+
+.selectRadio label {
+    margin-right: 25px;
+}
+
+.profile_label {
+    color: #e3e3e3;
+    padding: 10px 15px;
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    text-decoration: none;
+    left: 45%;
+    top: 10%;
+    font-size: 16px;
+}

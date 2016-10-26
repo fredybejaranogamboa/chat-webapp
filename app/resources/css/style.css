@@ -111,6 +111,11 @@ code {
         endColorstr='#ff0c5381', GradientType=0);
 }
 
+/* Chat Page Styles */
+#people {
+    margin: 3% 0 2% 0;
+}
+
 .swiper-container {
     max-width: 500px;
     height: 80%;
@@ -118,7 +123,7 @@ code {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /*background: #fff;*/
 
     /* Center slide text vertically */
     display: -webkit-box;

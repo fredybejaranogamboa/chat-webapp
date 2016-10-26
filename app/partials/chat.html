@@ -1,21 +1,24 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            
             <!-- Slider main container -->
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <div class="people">
-                            <img src="{{user.photo}}" alt="" class="people-img img-responsive userPhoto" style="display:none; box-shadow: 0px 5px 10px #aaa;">
-                            <img src="app/resources/img/default.png" alt="" class="people-img img-responsive userPhoto" style="display:inline; box-shadow: 0px 5px 10px #aaa;">
+                        
+                        <!--Where the magic happened-->
+                        <div id="people">
+                            <div class="people">                                
+                                <img id="userPhoto"     class="people-img img-responsive userPhoto"     style="display:none; box-shadow: 0px 5px 10px #aaa;" src="{{user.photo}}" alt="">
+                                <img id="defaultPhoto"  class="people-img img-responsive defaultPhoto"  style="display:inline;" src="app/resources/img/default_female.jpg" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide"><img src="app/resources/img/default.png" alt="" class="people-img img-responsive userPhoto" style="display:inline; box-shadow: 0px 5px 10px #aaa;"></div>
-                    <div class="swiper-slide"><img src="app/resources/img/default.png" alt="" class="people-img img-responsive userPhoto" style="display:inline; box-shadow: 0px 5px 10px #aaa;"></div>
+                    
+                    <div class="swiper-slide"><img src="app/resources/img/default_female.jpg"   alt="" class="people-img img-responsive userPhoto" style="display:inline; box-shadow: 0px 5px 10px #aaa;"></div>
+                    <div class="swiper-slide"><img src="app/resources/img/default_male.jpg"     alt="" class="people-img img-responsive userPhoto" style="display:inline; box-shadow: 0px 5px 10px #aaa;"></div>
                 </div>
             </div>
             <button type="button" class="btn btn-warning btn-block" data-ng-click="startChat(user.id)">Iniciar Chat</button>
