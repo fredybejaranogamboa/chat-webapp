@@ -26,10 +26,14 @@
         <link rel="stylesheet" href="app/resources/css/bootstrap.min.css">
         <!--<link rel="stylesheet" href="app/resources/css/bootstrap-theme.min.css">-->
         <link href="app/resources/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css">
 
         <!-- Our Website CSS Styles -->
         <link rel="stylesheet" href="app/resources/css/bootstrap-social.css">
         <link rel="stylesheet" href="app/resources/css/style.css">
+        
 
     </head>
     <body ng-app="chatWebApp">
@@ -50,11 +54,17 @@
         <!-- Vendor: Angular, followed by our custom Javascripts -->
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
-
+        <script src="app/resources/js/swiper.jquery.min.js"></script>
+        
+        <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+        
         <!-- Our Website Javascripts -->
         <script src="app/modules/main.js"></script>
         <script src="app/resources/lib/angular-facebook.js"></script>
         <script src="app/modules/chatService.js"></script>
+        
+        <script type="text/javascript" src="app/resources/js/chat.js"></script>
     </body>
 </html>
 
